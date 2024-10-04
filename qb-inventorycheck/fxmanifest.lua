@@ -6,10 +6,12 @@ description 'インベントリ確認プラグイン - ox_inventoryを使用し�
 version '1.0.0'
 
 server_scripts {
+    '@oxmysql/lib/MySQL.lua',
     'server.lua'
 }
 
 dependencies {
+    'qb-core',
     'ox_inventory'
 }
 
